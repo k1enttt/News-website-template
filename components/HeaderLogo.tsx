@@ -37,11 +37,12 @@ function HeaderLogo({
       </button>
       {/* Logo và cái text kế bên */}
       <a href={logourl} className="flex ml-2 md:mr-24">
-        <div className="h-8 mr-3">
-          <Image src={logosrc} alt={logoalt} height={37} width={84} />
+        <div className="h-8 mr-3 flex items-center justify-center">
+          {/* TODO: Cập nhật kích thước thẻ Image sao cho phù hợp với logo của bạn */} 
+          <Image src={logosrc} alt={logoalt} height={100} width={130} />
         </div>
 
-        {/* [Explain] Lý do comment đoạn code sau là bởi khách hàng chưa cần đến và có thể uncomment nếu khách hàng có nhu cầu */}
+        {/* [Explain] Lý do comment đoạn code sau là bởi người dùng chưa cần đến title của trang và có thể uncomment nếu người dùng có nhu cầu */}
         {/* <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
           A new dasboard
         </span> */}

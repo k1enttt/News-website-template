@@ -10,8 +10,8 @@ function Header() {
         <div className="flex items-center justify-between">
           <div className="flex-none">
             <HeaderLogo
-              logosrc={"/fls-logo.webp"}
-              logoalt={"FLS Group"}
+              logosrc={"/logo-placeholder.png"}
+              logoalt={"Your logo"}
               logourl={"/"}
             />
           </div>

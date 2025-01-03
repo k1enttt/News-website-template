@@ -32,7 +32,8 @@ const Blog = ({ blog }: { blog: Post }) => {
     await exportToPdf(document, slug)
       .then((errorMes) => {
         setPdfError(errorMes);
-      }).catch((error) => {
+      })
+      .catch((error) => {
         setPdfError(error.message);
       })
       .finally(() => {
@@ -159,12 +160,14 @@ const Blog = ({ blog }: { blog: Post }) => {
           <div className="md:flex md:justify-between">
             {/* Logo của công ty */}
             <div className="mb-6 md:mb-0">
-              <a href="https://fls-group.com" className="flex items-center">
+              {/* TODO: Chỉnh sửa href của thẻ a thành dường dẫn của logo */}
+              <a href="/" className="flex items-center">
+                {/* TODO: Chỉnh sửa src, alt, width và height theo logo của bạn */}
                 <Image
-                  src="/fls-logo.webp"
-                  className="mr-3 h-16"
-                  alt="FLS Group Logo"
-                  width={145}
+                  src="/logo-placeholder.png"
+                  className="mr-3 h-16 object-contain"
+                  alt="Your Logo"
+                  width={180}
                   height={64}
                 />
               </a>
