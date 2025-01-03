@@ -37,7 +37,7 @@ const Blog = ({ blog }: { blog: Post }) => {
   return (
     <>
       {/* Thẻ main là bài blog + phần comment */}
-      <main className="pt-8 pb-16 lg:pt-24 lg:pb-24 text-white antialiased font-gotham-book">
+      <main className="pb-16 pt-20 lg:pb-24 text-white antialiased font-gotham-book">
         <div className="flex flex-col justify-between px-4 mx-auto max-w-screen-xl">
           {/* Style padding `p-1` của thẻ <article> dùng để tránh lỗi nội dung chữ của pdf bị cắt xén. */}
           <div className="mx-auto w-full max-w-2xl lg:format-lg space-y-4 pb-1">

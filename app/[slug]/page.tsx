@@ -31,6 +31,7 @@ export default async function BlogPage({
     html: updateStyleOfGallery || formatedHtml,
   }
 
+
   return (
     <BlogLayout>
       <Blog blog={blog} />
