@@ -1,3 +1,4 @@
+import Footer from "../Footer";
 import Header from "../Header";
 
 export default function BlogLayout({
@@ -11,6 +12,8 @@ export default function BlogLayout({
 
       {/* Phần nội dung main của trang */}
       {children}
+
+      <Footer />
     </>
   );
 }
