@@ -30,7 +30,7 @@ const SearchBar = () => {
         <input
           type="text"
           name="query"
-          placeholder="Find case study"
+          placeholder="Type some keywords"
           defaultValue={searchParams.get("query") || ""}
           className="w-full p-2 border border-gray-300 focus:border-green focus:outline-none focus:ring-1 focus:ring-green"
         />

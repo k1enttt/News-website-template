@@ -31,14 +31,16 @@ const gothamBold = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("http://localhost:3000"),
-  title: "FLS Case Studies",
-  description: "FLS Case Study Library",
+  title: "News Website",
+  description: "News Website",
   openGraph: {
-    title: "FLS Case Studies",
-    description: "FLS Case Study Library",
-    url: "https://flsnews-nextjs.vercel.app/",
-    siteName: "FLS Case Studies",
-    images: "/opengraph-image.avif",
+    title: "News Website",
+    description: "News Website",
+    // Chỗ này thay bằng đường dẫn công khai đến trang web của bạn
+    url: "#",
+    siteName: "News Website",
+    // Chỗ này thay bằng đường dẫn ảnh của bạn trong thư mục public 
+    images: "/opengraph-image.png",
   },
 };
 
