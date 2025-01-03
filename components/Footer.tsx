@@ -27,13 +27,14 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="https://fls-group.com" className="footer-link">
-                    FLS Group
+                  {/* TODO: Thay đổi href của đường dẫn */}
+                  <a href="#" className="footer-link">
+                    Document
                   </a>
                 </li>
                 <li className="mb-4">
                   <a
-                    href="https://fls-group.com/who-we-are"
+                    href="#"
                     className="footer-link"
                   >
                     Who we are
@@ -41,7 +42,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://fls-group.com/capabilities"
+                    href="#"
                     className="footer-link"
                   >
                     Capabilities
@@ -57,7 +58,7 @@ const Footer = () => {
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
                   <a
-                    href="https://www.linkedin.com/company/flsgroup/"
+                    href="https://www.linkedin.com"
                     className="footer-link "
                   >
                     LinkedIn
@@ -65,7 +66,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <a
-                    href="https://www.facebook.com/FLSGroup1993"
+                    href="https://www.facebook.com"
                     className="footer-link"
                   >
                     Facebook
@@ -73,7 +74,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.youtube.com/c/FLSGroup"
+                    href="https://www.youtube.com"
                     className="footer-link"
                   >
                     Youtube
@@ -89,7 +90,7 @@ const Footer = () => {
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
                   <a
-                    href="https://fls-group.com/privacy-policy"
+                    href="#"
                     className="footer-link"
                   >
                     Privacy Policy
@@ -97,7 +98,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://fls-group.com/terms-conditions"
+                    href="#"
                     className="footer-link"
                   >
                     Terms &amp; Conditions
@@ -111,8 +112,8 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © {new Date().getFullYear()}{" "}
-            <a href="https://fls-group.com" className="hover:underline">
-              FLS Group
+            <a href="#" className="hover:underline">
+              Your company
             </a>
             . All Rights Reserved.
           </span>
@@ -120,7 +121,7 @@ const Footer = () => {
             {/* LinkedIn icon */}
             <a
               aria-label="LinkedIn"
-              href="https://www.linkedin.com/company/flsgroup"
+              href="https://www.linkedin.com"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -143,7 +144,7 @@ const Footer = () => {
             {/* Facebook icon */}
             <a
               aria-label="Facebook"
-              href="https://www.facebook.com/FLSGroup1993"
+              href="https://www.facebook.com"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -162,7 +163,7 @@ const Footer = () => {
             {/* Youtube icon */}
             <a
               aria-label="Youtube"
-              href="https://www.youtube.com/c/FLSGroup"
+              href="https://www.youtube.com"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
