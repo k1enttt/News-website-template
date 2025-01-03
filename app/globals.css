@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer-link {
+  @apply hover:underline hover:text-blue;
+}
+
+/* [Begin] Gallery */
+.kg-gallery-container {
+  @apply space-y-2;
+}
+.kg-gallery-row {
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.kg-gallery-image img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+/* [End] Gallery */
