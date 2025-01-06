@@ -7,10 +7,12 @@ import { notFound } from "next/navigation";
 
 export default async function BlogPage({
   params,
+  searchParams
 }: {
   params: {
     slug: string;
   };
+  searchParams: { windowWidth: string | undefined }
 }) {
   const { slug } = params;
   let blog: Post | null = await getBlogBySlug(slug.toString());
@@ -24,7 +26,10 @@ export default async function BlogPage({
     "https://ghost.kienttt.site"
   );
 
-  const updateStyleOfGallery = updateGalleryRowAspectRatio(formatedHtml);
+  // Chuyển windowWidth thành số, nếu thất baị thì mặc định là 1920
+  const windowWidthNumber = parseInt(searchParams.windowWidth || "1920");
+
+  const updateStyleOfGallery = updateGalleryRowAspectRatio(formatedHtml, windowWidthNumber);
 
   blog = {
     ...blog,

@@ -82,3 +82,17 @@ export const tags: Record<string, string[]> = {
   ],
   bussinessUnit: ["Project", "Logistic", "Warehousing", "Trading"],
 };
+
+export const aspectRatioFallback = (width: number, height: number): string => `@supports not (aspect-ratio: ${width} / ${height}) {
+    &::before {
+      float: left;
+      padding-top: ${width * 100 / height}%;
+      content: '';
+    }
+
+    &::after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+}`;

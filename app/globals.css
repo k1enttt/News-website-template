@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --kg-gallery-row-ratio: calc(16/9);  
+}
+
 .footer-link {
   @apply hover:underline hover:text-blue;
 }

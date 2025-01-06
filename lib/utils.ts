@@ -1,3 +1,5 @@
+import { aspectRatioFallback } from "./constant";
+
 interface FormattedDate {
   value: string;
   title: string;
@@ -415,7 +417,7 @@ function findHtmlDiv(
  * @param html html của bài viết
  * @returns
  */
-export function updateGalleryRowAspectRatio(html: string): string | undefined {
+export function updateGalleryRowAspectRatio(html: string, actualWidth: number): string | undefined {
   let updatedHtml = html;
   // Lấy tất cả các thẻ .kg-gallery-row
   const galleryImages: string[] | null = findHtmlDiv(html, "kg-gallery-image");
@@ -470,8 +472,9 @@ export function updateGalleryRowAspectRatio(html: string): string | undefined {
     });
 
     // Thiết lập aspect-ratio cho .kg-gallery-row
-    const aspectRatio = totalWidth / minHeight;
-    const newStyle = `style="aspect-ratio: ${aspectRatio};"`;
+    const aspectRatio = Math.round((totalWidth / minHeight) * 100) / 100;
+    // BUG: "actualWidth * 0.4" không thích hợp cho màn hình mobile
+    const newStyle = `style="aspect-ratio: ${(aspectRatio)}; height: calc(${actualWidth * 0.4}px / ${aspectRatio});"`;
 
     // Hàm để chèn style vào thẻ div
     function insertStyle(div: string, style: string) {

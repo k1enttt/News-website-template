@@ -31,7 +31,7 @@ const CardNews = ({data}:{
       imgAlt={feature_image_alt || ""}
       imgSrc={feature_image || ""}
       onClick={() => {
-        route.push(`/${slug}`);
+        route.push(`/${slug}?windowWidth=${window.innerWidth}`);
       }}
     >
       <h5 className="text-2xl font-bold tracking-tight text-white dark:text-white font-conthrax-bold">
