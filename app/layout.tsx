@@ -3,7 +3,8 @@ import "./globals.css";
 import Script from "next/script";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 // Các font cần dùng
 const conthraxBold = localFont({
@@ -58,6 +59,7 @@ export default function RootLayout({
         {/* Phần nội dung main + layout của trang home */}
         {children}
         <Analytics />
+        <SpeedInsights />
 
         {/* Cái script này để nó chạy click menu được */}
         <Script
